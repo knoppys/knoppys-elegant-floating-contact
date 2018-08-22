@@ -12,7 +12,7 @@ License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 function knoppys_contact_core(){ ob_start(); ?>
 
   <style type="text/css">
-  	.contact-float-container {
+    .contact-float-container {
       position: fixed;
       right: 0;
       background: #5287a6;
@@ -43,8 +43,27 @@ function knoppys_contact_core(){ ob_start(); ?>
   }
   @media all and (max-width: 768px){
     .contact-float-container {
-      display: none !important;
+        position: absolute;
+        top: 25%;
+        border-radius: 0;
+        width: 100%;
+        padding: 0;
     }
+
+    .contact-float-container .box {
+        display: inline-block;
+        width: 49%;
+        /* text-align: center; */
+        padding: 5px 8%;
+    }
+
+    .contact-float-container .box i {
+        float: left;
+        font-size: 21px;
+        line-height: 1.6;
+        padding-right: 10px;
+    }
+     
   }
   </style>
   <div class="contact-float-container">
