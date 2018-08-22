@@ -3,7 +3,7 @@
 Plugin Name:       Knoppys Elegant Floating Contact
 Plugin URI:        https://www.knoppys.co.uk
 Description:       This plugin adds a floating contact tab to the right of the screen. Hidden on mobile. 
-Version:           4
+Version:           5
 Author:            Knoppys Digital Limited
 License:           GNU General Public License v2
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
@@ -42,30 +42,26 @@ function knoppys_contact_core(){ ob_start(); ?>
       color: #fff;
   }
   @media all and (max-width: 768px){
-    .contact-float-container {
+   .contact-float-container {
         position: absolute;
-        top: 26%;
+        top: 27%;
         border-radius: 0;
         width: 100%;
         padding: 0;
         z-index: 100;
     }
-
     .contact-float-container .box {
         display: inline-block;
         width: 49%;
-        /* text-align: center; */
-        padding: 5px 8%;
+        text-align: center;
+        padding: 5px;
+        font-size: 17px;
     }
-
     .contact-float-container .box i {
-        float: left;
-        font-size: 21px;
-        line-height: 1.6;
-        padding-right: 10px;
+        display: none;
     }
-     
-  }
+   
+}
   </style>
   <div class="contact-float-container">
     <div class="box">
